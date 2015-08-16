@@ -18,4 +18,13 @@ public class HomeController {
 		resp.setContentType("text/html; charset=UTF-8");
 		return "home";
 	}
+	
+	@RequestMapping("/intro.do")
+	public String introduction(HttpServletRequest req, HttpServletResponse resp) {
+		//return "/WEB-INF/templates/home.html";
+		System.out.println("###inrtro url is"+req.getPathInfo());
+		//resp.addHeader("Content-Type", "text/html; charset=UTF-8");
+		resp.setContentType("text/html; charset=UTF-8");
+		return "resume";
+	}
 }
