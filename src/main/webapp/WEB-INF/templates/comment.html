@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>评论</title>
+</head>
+<body>
+	<p>请填写评论</p>
+	<form action="#" th:action="@{/comment}" th:object="${comment}" method="POST">
+		<input type="text" th:field="*{content}" />
+		<input type="text" th:field="*{author}" />
+		<button type="submit">submit</button>
+	</form>
+</body>
+</html>
