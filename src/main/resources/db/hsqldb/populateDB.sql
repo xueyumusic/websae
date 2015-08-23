@@ -1,0 +1,1 @@
+INSERT INTO comments (content, author) VALUES ('seeddata1', 'seeddata-author');
